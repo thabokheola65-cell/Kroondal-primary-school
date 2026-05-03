@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kroondal Primary School</title>  <!-- Google Font -->  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">  <style>
+    :root {
+      --maroon: #7a1f2b;
+      --yellow: #f2c94c;
+      --light: #ffffff;
+      --gray: #f5f5f5;
+      --text: #333333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--gray);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: var(--light);
+      border-bottom: 4px solid var(--maroon);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .logo h1 {
+      font-size: 20px;
+      color: var(--maroon);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--maroon);
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(88, 10, 10, 0.7), rgb(85, 9, 9)), url('school.jpg') center/cover no-repeat;
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 20px;
+      background: var(--light);
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h3.section-title {
+      text-align: center;
+      font-size: 32px;
+      color: var(--maroon);
+      margin-bottom: 40px;
+    }
+
+    /* ABOUT */
+    .about p {
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    /* PRINCIPAL */
+    .principal {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .principal img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* ACADEMICS */
+    .academics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--gray);
+      padding: 25px;
+      border-radius: 10px;
+      border-left: 5px solid var(--yellow);
+    }
+
+    /* TEACHERS */
+    .teachers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .teacher {
+      background: var(--gray);
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .teacher img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* GALLERY */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* NEWS */
+    .news {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--maroon);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .principal {
+        grid-template-columns: 1fr;
+      }
+      .hero h2 {
+        font-size: 30px;
+      }
+    }
+  </style></head>
+<body><header>
+  <div class="nav">
+    <div class="logo">
+      <img src="Picture1(1).png" alt="Kroondal Primary School Logo">
+      <h1>Kroondal Primary School</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#principal">Principal</a></li>
+        <li><a href="#academics">Academics</a></li>
+        <li><a href="#teachers">Teachers</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#news">News</a></li>
+      </ul>
+    </nav>
+  </div>
+</header><section class="hero" id="home">
+  <h2>Welcome to Kroondal Primary School</h2>
+  <p>Nurturing young minds through quality education, discipline, and care in Rustenburg.</p>
+</section><section id="about">
+  <div class="container about">
+    <h3 class="section-title">About Our School</h3>
+    <p>About
+Kroondal Primary School, situated at Ikemeleng Informal Settlement, Rustenburg, Kroondal, 3747, operates as a public primary school within the Kroondal, Rustenburg suburb of North West Province, South Africa.
+</p>
+Admission
+</p>
+The admission to public schools like Kroondal Primary School follows a structured process outlined by the South African Schools Act of 1996. As stipulated, children between the ages of 7 and 15 are mandated to attend school.
+Registration for the upcoming academic year typically occurs between April and October of the preceding year, with specific age criteria for entry into Grade R and Grade 1. Parents or guardians are required to submit essential documents, including birth certificates and immunization cards, while non-South African citizens must provide additional documentation.
+Provincial Learner Admissions Coordinators are available to provide guidance and support throughout the admissions process, ensuring that every child has access to quality education.
+</p>
+School Uniform
+</p>
+Kroondal Primary School uniform policies are established by the school’s governing body, aligned with the regulations outlined in the South African Schools Act of 1996 and provincial Education Department guidelines.
+These policies dictate the design, colors, and proper wearing of school uniforms to cultivate a sense of unity, equality, and discipline among students. For detailed information regarding Kroondal Primary School’s uniform policy, individuals are encouraged to contact the school administration directly.
+</p>
+School Statistics
+</p>
+According to a survey conducted in the year 2026, the school had a total population of 1200 learners served by a dedicated team of 31 educators, resulting in a student-teacher ratio of 34:1.</p>
+  </div>
+</section><section id="principal">
+  <div class="container">
+    <h3 class="section-title">Principal's Message</h3>
+    <div class="principal">
+      <img src="WhatsApp Image 2026-02-19 at 13.27.22.jpeg" alt="Principal">
+      <p>About Kroondal Primary School
+Kroondal Primary School is a growing and developing institution committed to excellence in education. The school is supported by a dedicated team of qualified teachers, an active School Governing Body, and a strong School Quality Learning and Teaching Campaign that ensures high academic standards.
+The school receives valuable support from nearby mining communities, particularly through sponsorships that assist in teaching and learning services. Information and Communication Technology (ICT) resources are generously provided by local mines to enhance digital learning and ensure learners are well-prepared for modern educational demands.
+Kroondal Primary School is proud of its cooperative and supportive learners and parents. The school community works closely together to promote growth, discipline, and academic success. Parents actively participate in school programs and administrative initiatives, contributing positively to the overall development of the institution. As a result, many learners consistently achieve outstanding academic results.
+The school also places strong emphasis on inclusive education and learner support programs, ensuring that every child receives the necessary care and attention to succeed. A variety of extracurricular activities are offered to promote holistic development, including sports such as soccer, netball, athletics, chess, and table tennis. These activities help learners stay healthy, active, and confident.
+Kroondal Primary School participates in athletics and cultural activities across the country, encouraging learners to develop their talents beyond the classroom.
+As a values-driven and faith-based institution, the school promotes strong moral principles and community involvement, guided by dedicated leadership and supported by charitable partnerships.</p>
+    </div>
+  </div>
+  </section><section id="School Leadership Team">
+  <div class="container">
+    <h3 class="section-title">School Governing Body</h3>
+    <div class="School Governing Body">
+      <img src="principal.jpg"alt="School Governing Body">
+      <p>School Governing Body (SGB)
+Kroondal Primary School is proud to have a strong and dedicated School Governing Body (SGB) that plays a vital role in the development and governance of the school. The SGB is responsible for overseeing infrastructure, school grounds, and overall maintenance to ensure a safe and conducive learning environment.
+The governing body actively seeks funding and partnerships to improve school conditions. This includes projects such as repairing leaking roofs, maintaining classrooms, upgrading facilities, and painting school buildings to create a welcoming atmosphere for learners and staff.
+The SGB consists of 12 committed members who work closely with school management to ensure that policies are properly implemented and that the school’s Code of Conduct is upheld at all times. Their leadership and dedication contribute significantly to the smooth operation and continuous improvement of the school.</p>
+    </div>
+  </div>
+</section><section id="academics">
+  <div class="container">
+    <h3 class="section-title">Academics</h3>
+    </p>Academics
+Kroondal Primary School is committed to delivering quality education across all phases of learning. Our academic program is designed to build a strong foundation, develop critical thinking skills, and prepare learners for future success.
+Foundation Phase (Grade R – 3)
+The Foundation Phase focuses on building strong skills in literacy, numeracy, and life skills. We are proud to have newly built classrooms that provide a safe, modern, and stimulating environment for our young learners. These classrooms are designed to encourage creativity, participation, and early academic development.
+The recent addition of new toilet facilities further supports learner health, hygiene, and overall well-being. We believe that a clean and comfortable environment plays a vital role in effective learning.
+Intermediate Phase (Grade 4 – 6)
+In the Intermediate Phase, learners are guided to deepen their understanding of core subjects such as Mathematics, English, Natural Sciences, Social Sciences, and Life Skills. At this stage, learners develop independent learning habits, problem-solving abilities, and teamwork skills.
+Our educators use innovative teaching strategies and integrate Information and Communication Technology (ICT), supported by local mining partners, to enhance digital learning and academic performance.
+Senior Phase (Grade 7)
+The Senior Phase prepares learners for the transition to high school. Academic focus is strengthened through advanced subject content, structured assessments, and leadership development opportunities.
+Learners are encouraged to take responsibility for their studies while building confidence, discipline, and strong moral values. The school provides continuous academic support to ensure that Grade 7 learners are well-prepared for secondary education.
+At Kroondal Primary School, we believe that every phase of learning is important. Through dedicated teachers, supportive parents, and strong community partnerships, we continue to achieve excellent academic results and nurture well-rounded learners.
+</p>
+    <div class="academics">
+      <div class="card">Foundation Phase (Grade R – 3)</div>
+      <div class="card">Intermediate Phase (Grade 4 – 6)</div>
+      <div class="card">Senior Phase (Grade 7)</div>
+    </div>
+  </div>
+</section><section id="teachers">
+  <div class="container">
+    <h3 class="section-title">Our Teachers</h3>
+    <div class="teachers">
+      <div class="teacher"><img src="WhatsApp Image 2026-02-19 at 13.27.57 (1).jpeg"><p>RATLOU R.G, DIALE K.F, GXUMISA B, NQOKO MC, MABELENG T.E, MADIEHE K.T, MOGARA D.J, MOGOTSI S.S.P, MOKOKA A, MOROANE E.S, MOSIME T.J, MOTAU M.R ,MOTLHABANE A.O, MOTSHEGOA G.J, MOTUKU M.J, NGWENYA R.O.L,NQAZELA N, PHEKOYANTWA M.A ,RATABANE M.R, SENNE J.M, SEROLONG M ,THAPO I.N, ZIQWAYI N.R, SEGANELO O.R, MNGOMEZULU V, MOKGOTHO P.C, KGAKATSI M, TSOMOLE S.P, GABHAYI N, MOLLO T.M ,LETSHOO D,MAKINANA M.Z, RATLOU R.G </p></div>
+      
+    </div>
+  </div>  <!-- RIGHT CONTENT () -->
+    <div class="right-content">
+
+</section>
+<section class="top Teachers">
+    <h2>School Management Team (SMT)</h2></div>
+
+    <div class="grades-container">
+
+        <!-- GRADE 1 -->
+        <div class="grade-card">
+            <h3></h3>
+
+            <div class="learner">
+                <img src="WhatsApp Image 2026-02-19 at 13.27.55.jpeg"width="700"  alt="Top Learner Grade 1">
+                <p><strong></p>
+            </div>
+
+            <div class="learner">
+                <p><strong>Foundation Phase Teachers </strong><br></p>
+            </div>
+
+            <div class="learner">
+                <img src="WhatsApp Image 2026-02-19 at 13.27.48 (1).jpeg"width="700"  alt="Third Learner Grade 1">
+                <p><strong></strong><br></p>
+            </div>
+        </div>
+
+       
+            </div>
+        </div>
+</section><section id="gallery">
+  <div class="container">
+    <h3 class="section-title">Gallery</h3>
+    <div class="gallery">
+      <img src="WhatsApp Image 2026-01-16 at 16.15.30.jpeg">
+      <img src="WhatsApp Image 2026-01-16 at 18.19.51.jpeg">
+      <img src="WhatsApp Image 2026-01-16 at 16.89.51.jpeg">
+      <img src="WhatsApp Image 2026-02-19 at 13.27.41.jpeg">
+      <img src="WhatsApp Image 2026-02-19 at 13.27.47.jpeg">
+      <img src="WhatsApp Image 2026-01-16 at 18.19.51.jpeg">
+      <img src="WhatsApp Image 2026-02-19 at 13.27.55 (2).jpeg">
+      <img src="WhatsApp Image 2026-01-16 at 16.19.502.jpeg">
+     <img src="WhatsApp Image 2026-01-16 at 16.15.30.jpeg">
+      <img src="WhatsApp Image 2026-02-19 at 13.27.48.jpeg">
+      <img src="WhatsApp Image 2026-01-16 at 16.89.51.jpeg">
+      <img src="WhatsApp Image 2026-01-16 at 16.19.502.jpeg">
+     
+     
+    </div>
+  </div>
+</section><section id="news">
+  <div class="container">
+    <h3 class="section-title">News & Announcements</h3>
+    <div class="news">
+      <div class="card">School reopens on 15 January</div>
+      <div class="card">Admissions now Closed</div>
+    </div>
+  </div>
+</section><footer>
+  <p>Kroondal Primary School</p>
+  <p>Rustenburg, South Africa</p>
+  <p>Contact </p>
+Address: Ikemeleng Informal Settlement, Rustenburg, Kroondal, 3747
+Phone: +27 84 346 9199
+Email: 600100771kps@gmail.com
+2026 Principal: Mr Moroane E.S </p>
+</footer></body>
+</html>
+</body>
+</html>
